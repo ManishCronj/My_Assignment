@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function AddEmployee()
+{
+   window.location='AddEmp.html';
+}
+function AddRemark()
+{
+	window.location='AddRem.html';
+}
+function view_detail()
+{
+   
+}
+</script>
+<title>Add Emp</title>
+</head>
+<body>
+<form action="" method="POST">
+<center><br /><br />
+<input type="button" value="Add employee" id="AddEmp" onclick="AddEmployee()"/>&nbsp;&nbsp;
+<input type="button" value="Add remark" id="AddRem" onclick="AddRemark()"/>&nbsp;&nbsp;
+<select value="view details" id="detail" onchange="view_detail()" ><option>emp1</option><option>emp2</option><option>emp3</option></select>
+</center>
+
+
+</form>
+</body>
+</html>
