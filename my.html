@@ -9,28 +9,39 @@
 <title>	HR Login</title>
 </head>
 <body>
+
 <center><h1>Employee Management System</h1></center>
 <br /><br /><br /><br />
-<div id="hrlogin">
-<form ><!-form  field start>
-<center><label>&nbsp;&nbsp;&nbsp;&nbsp;Email:</label><input type="email" id="name" /></center><br />
-<center><label>Password:</label><input type="password" id="pass" /></center><br />
+ <div id="hrlogin"><!--1st div-->
+  <form ><!--form  field start-->
+        <center><label>&nbsp;&nbsp;&nbsp;&nbsp;Email:</label><input type="email" id="name" /></center><br />
+        <center><label>Password:</label><input type="password" id="pass" /></center><br />
+        <center>&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" id="submit" value="submit" onclick="hrcompare()"></center>
+  </form >
+ </div>
+<div id="ureg"><!-- 2nd div-->
+ <form name="abc" onsubmit="return save_user();">
+ 
+   <center>
+   
+       <label>&nbsp;&nbsp;&nbsp;&nbsp;User Id : </label><input type="text" id="uid" /><br /><br />   
+       <label>&nbsp;&nbsp;&nbsp;&nbsp;Full Name : </label><input type="text" id="uname" /><br /><br />
+       <label>User'password : </label><input type="password" id="upass" /><br /><br />
+       <label>Initial Remark : </label><input type="text" id="uremark"><br /><br />
+       <input type="submit" id="submit" value="add user">
+       <input type="button" id="showdetail" value="User Details" onclick="window.open('empdetail.html')">
+       <input type="button" id="Emp login" value="Emp login" onclick="window.open('my.html')">
+       <input type="button" id="logout" value="logout" onclick="window.open('my.html')">
 
-<center>&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" id="submit" value="submit" onclick="hrcompare()"></center>
-</form>
-</div>
-<div id="ureg">
-<form >
-<center><label>&nbsp;&nbsp;&nbsp;&nbsp;User's id : </label><input type="text" id="uname" /><br /><br />
-<label>User'password : </label><input type="password" id="upass" /><br /><br />
-<label>Initial Remark : </label><input type="text" id="uremark"><br /><br />
-<input type="submit" id="submit" onsubmit="">
-</center>
-</form>
-</div>
-<div id="udetails">
-<h3>Employee's Details</h3>
+   </center>
+ </form>
 </div>
 
+<div id="udetails"><!--3rd div-->
+<h3>Registered Employees</h3>
+</div>
+<div id="display">
+<h3>Employee details</h3>
+</div>
 </body>
 </html>
